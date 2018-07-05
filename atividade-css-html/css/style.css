@@ -1,0 +1,151 @@
+/* CSS RESET */
+*, *:before, *:after {margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section, main{display: block;}
+audio,canvas,video{display: inline-block;}
+html{font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
+body,button,input,select,textarea{font-family: sans-serif;}
+:active, :focus, a:hover{outline: 0;}
+b, strong {font-weight: bold;}
+pre{white-space: pre-wrap;}
+hr {-webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box;  height: 0;}
+q {quotes: "\201C" "\201D" "\2018" "\2019";}
+sub,sup{font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+sup{top: -.5em;}
+sub{bottom: -.25em;}
+img{border: 0; -ms-interpolation-mode:bicubic;}
+svg:not(:root){overflow: hidden;}
+legend{border: 0;}
+button,input,select,textarea{vertical-align: middle;}
+button,input{line-height: normal;}
+button,input[type=button],input[type=reset],input[type=submit]{ border: none; cursor: pointer; overflow: visible; -webkit-appearance: button;}
+button, select {text-transform: none;}
+input[type=search]{-moz-box-sizing: content-box; box-sizing: content-box; -webkit-appearance: textfield; -webkit-box-sizing: content-box;}
+input[type="search"]::-webkit-search-cancel-button, 
+input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
+button::-moz-focus-inner,
+input::-moz-focus-inner{border: 0;}
+textarea{overflow: auto; vertical-align: top;  resize: none;}
+audio:not([controls]) {display: none; height: 0;}
+[hidden]{display: none;}
+button[disabled],html input[disabled] {cursor: default;}
+input[type="checkbox"], input[type="radio"] {box-sizing: border-box;}
+body, html {height: 100%; width: 100%;}
+body {overflow: -moz-scrollbars-vertical;}
+
+
+/* CSS MAIN */
+
+body {
+    background: repeating-linear-gradient(45deg, black 0.1%, #0c4570 0.5%);
+    font-size: 1.7rem;
+    1font-size: 2rem;
+}
+
+.container {
+    padding-top: 40px;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    background: #FFF;
+}
+
+.container h1 {
+    background: #005581;
+    color: white;
+    padding: 2rem;
+    line-height: 1.3;
+    margin: 0 auto 40px -40px;
+}
+
+.container div.row > div {
+    padding: 0 40px;
+}
+
+.container div.row > div > ul > li {
+    font-size: 2rem;
+}
+
+div.img-bg-1 {
+    background: url('../assets/casa.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 700px;
+}
+
+div.img-bg-2 {
+    background: url('../assets/personagem-1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    transform: scale(1.3);
+    margin: 100px auto -200px 40px;
+}
+
+div.img-bg-3 {
+    background: url('../assets/balao-fala.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 260px;
+    padding: 3.5rem 3.5rem 7.5rem 5rem;
+    
+    transform: scaleY(4);
+    margin-top: 300px;
+}
+
+div.img-bg-3 p {
+    transform: scaleY(.25);
+}
+
+div.img-bg-3 p:first-child {
+    margin-top: -80px;
+}
+div.img-bg-3 p:nth-child(2) {
+    margin-top: -90px;
+}
+
+.blue-box {
+    background: #249ecc;
+    color: #FFF;
+    height: 20vh;
+    padding: 25px 40px;
+}
+
+.blue-box p {
+    line-height: 1.5;
+}
+
+.container div.row > div.green-box {
+    padding: 10px 40px;
+    background: #3a962d;
+    color: #FFF;
+    margin: -20px 40px 40px 40px;
+    border-radius: 15px;
+    height: 15vh;
+}
+
+.green-box p {
+    margin: 1rem;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 500px) {
+
+    body {
+            font-size: 2rem;
+    }
+    
+    div.img-bg-3 {
+        transform: scaleY(1);
+        margin-top: auto;
+    }    
+    div.img-bg-3 p {
+        transform: scaleY(1);
+    }
+    div.img-bg-3 p:first-child {
+        margin-top: 0px;
+    }
+    div.img-bg-3 p:nth-child(2) {
+        margin-top: 0px;
+    }
+    
+} 

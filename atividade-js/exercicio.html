@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste Front-end | Atividade Javascript</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/exercicio.css">
+</head>
+
+<body>
+	<div class="container exercicio">
+		<div class="row">
+			<div class="col-md-8 col-md-push-2">
+				<header class="enunciado">
+					<p><strong>Olá, como vai?</strong></p>
+				    <p>Eu sou o Dr. Marshall e gostaria de te fazer uma pergunta:</p>                        	
+				    <p>Pense na sua última viagem. O que mais você se recorda?</p>
+				</header>				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-push-2">
+               
+                <div class="alternativas">
+                   
+                    <div class="alternativa">
+                        <span class="checkbox-wrap">
+                            <input type="radio" id="a1" name="q1">
+                        </span>
+                        <div class="texto">
+                            <label for="a1">A história do lugar.</label>
+                        </div>
+                    </div>
+                    <div class="alternativa">
+                        <span class="checkbox-wrap">
+                            <input type="radio" id="a2" name="q1">
+                        </span>
+                        <div class="texto">
+                            <label for="a2">As pessoas que conheci</label>
+                        </div>
+                    </div>
+                    <div class="alternativa">
+                        <span class="checkbox-wrap">
+                            <input type="radio" id="a3" name="q1">
+                        </span>
+                        <div class="texto">
+                            <label for="a3">As postagens que fiz nas redes sociais.</label>
+                        </div>
+                    </div>
+                    <div class="alternativa">
+                        <span class="checkbox-wrap">
+                            <input type="radio" id="a4" name="q1" checked>
+                        </span>
+                        <div class="texto">
+                            <label for="a4">Ter voltado com uma bagagem maior.</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="acoes">
+                    <input type="button" value="Confirmar" class="bt bt-confirmar" >
+                </div>
+				<div class="feedbacks">
+                    <div class="feedback-positivo" id="feedbackPositivo"><strong>Parabéns</strong>! Você selecionou a resposta correta.</div>
+					<div class="feedback-negativo" id="feedbackNegativo"><strong>Atenção</strong>! Você não selecionou a resposta correta.</div>
+                </div>
+			</div>
+		</div>
+	</div> 
+<!-- 	<script src="js/jquery.min.js"></script>-->
+ 	<script src="js/exercicio.js"></script>
+</body>
+</html>
